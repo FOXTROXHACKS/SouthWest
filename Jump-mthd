@@ -1,5 +1,5 @@
 local VU = game:GetService('VirtualUser')
-while wait(5) do
+while wait(speed) do
 _G.Enabled == true
 VU:CaptureController()
 wait(0.01)
