@@ -4,13 +4,13 @@ while wait(4) do
 if _G.Enabled == true then
         for i,c in pairs (plr.Backpack:GetChildren()) do
             if c.Name == phonename then
-                  wait(2)
+                  wait(speed)
                 c.Parent = plr.Character
             end
         end
         for i,c in pairs (plr.Character:GetChildren()) do
             if c.Name == phonename then
-                  wait(2)
+                  wait(speed)
                 c.Parent = plr.Backpack
             end
         end
