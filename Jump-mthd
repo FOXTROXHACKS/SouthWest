@@ -1,0 +1,10 @@
+local VU = game:GetService('VirtualUser')
+while wait(5) do
+_G.Enabled == true
+VU:CaptureController()
+wait(0.01)
+VU:SetKeyDown('0x20')
+wait(0.01)
+VU:SetKeyUp('0x20')
+end
+end
