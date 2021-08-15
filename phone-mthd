@@ -1,6 +1,6 @@
 local plr = game.Players.LocalPlayer
 
-while wait(4) do
+while wait(2) do
 if _G.Enabled == true then
         for i,c in pairs (plr.Backpack:GetChildren()) do
             if c.Name == phonename then
