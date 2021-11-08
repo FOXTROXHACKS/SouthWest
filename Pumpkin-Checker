@@ -1,7 +1,7 @@
-local LP = game:GetService("Players").LocalPlayer
+while wait(0.3) do
 	for i, pumpkin in pairs(game:GetService("Workspace").PumpkinHunt.spawnedPumpkins:GetDescendants()) do
 		if pumpkin:IsA("MeshPart") then
-			LP.Character.HumanoidRootPart.CFrame = pumpkin.CFrame
-			wait(1)
+		    warn("----------------------------PUMPKINS ARE HERE!----------------------------")
 		end
-	end
+    end
+end
