@@ -1,9 +1,0 @@
-local LP = game:GetService("Players").LocalPlayer
-			for i, pumpkin in pairs(game:GetService("Workspace").PumpkinHunt.spawnedPumpkins:GetDescendants()) do
-				if pumpkin:IsA("MeshPart") then
-					LP.Character.HumanoidRootPart.CFrame = pumpkin.CFrame
-          wait(0.1)
-          notify("Halloween Event", "pumpkin has been collected", 1)
-					wait(1)
-				end
-			end
