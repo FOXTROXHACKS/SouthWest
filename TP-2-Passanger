@@ -1,0 +1,22 @@
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+local LP = Players.LocalPlayer
+local Char = LP.Character
+
+local WS = game:GetService("Workspace")
+local PMs = LP:GetMouse()
+local Pass = game:GetService("ReplicatedStorage").PassengerDestinations
+for i, v in pairs(WS:GetDescendants()) do
+    if v.Name == "Passenger" and v:IsA("Model") then
+        local Hum = Char:FindFirstChildWhichIsA("Humanoid")
+        local VehicleSeat = Hum.SeatPart
+        local Vehicle = VehicleSeat:FindFirstAncestorWhichIsA("Model")
+        if table.find({"wheels", "body", "misc", "core"}, Vehicle.Name) then
+            Vehicle = Vehicle.Parent
+        end
+        Char.Parent = Vehicle
+        Vehicle:MoveTo(v.HumanoidRootPart.Position)
+        Char.Parent = workspace
+        print(v.HumanoidRootPart.Position)
+    end
+end
